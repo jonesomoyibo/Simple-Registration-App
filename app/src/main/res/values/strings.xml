@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Decagon Android 007</string>
+    <string name="app_name">WeekFiveTask</string>
+    <string-array name="Gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Prefer Not to Say</item>
+    </string-array>
+    <string name="usernamehint">FullName</string>
+    <string name="phonehint">Phone</string>
+    <string name="emailhint">Email</string>
+    <string name="buttontext">SIGN UP</string>
+    <string name="existingusertext">Already Have an Account?</string>
+    <string name="header1">CREATE AN ACCOUNT</string>
+    <string name="header2">Please Enter Your Info</string>
+
+
 </resources>
