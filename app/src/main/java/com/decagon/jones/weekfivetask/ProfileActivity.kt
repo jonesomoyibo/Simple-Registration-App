@@ -22,23 +22,23 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun initViews() {
 
-        name = findViewById<TextView>(R.id.nameTextView)
-        phoneNumber = findViewById<TextView>(R.id.phonenumbertextview)
-        emailAddress = findViewById<TextView>(R.id.emailtextview)
-        gender = findViewById<TextView>(R.id.genderTextView)
+        name = findViewById(R.id.nameTextView)
+        phoneNumber = findViewById(R.id.phonenumbertextview)
+        emailAddress = findViewById(R.id.emailtextview)
+        gender = findViewById(R.id.genderTextView)
     }
 
 
     private fun setViewValues() {
-        name.setText( getIntentFromCallingActivity().getStringExtra("Name"))
-        phoneNumber.setText( getIntentFromCallingActivity().getStringExtra("phoneNumber"))
-        emailAddress.setText( getIntentFromCallingActivity().getStringExtra("emailAddress"))
-        gender.setText(getIntentFromCallingActivity().getStringExtra("gender"))
+        name.text = getIntentFromCallingActivity().getStringExtra("Name")
+        phoneNumber.text = getIntentFromCallingActivity().getStringExtra("phoneNumber")
+        emailAddress.text = getIntentFromCallingActivity().getStringExtra("emailAddress")
+        gender.text = getIntentFromCallingActivity().getStringExtra("gender")
     }
 
     private fun getIntentFromCallingActivity(): Intent {
 
-        return getIntent()
+        return intent
     }
 
 
